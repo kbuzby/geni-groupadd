@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 echo "Starting malicious guest"
 pushd ~/contrib/kvm-install-vm
