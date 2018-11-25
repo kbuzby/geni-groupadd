@@ -11,7 +11,7 @@ for user in /users/*
 do
   username=$(basename $user)
   echo " user: $username"
-  sudo usermod -a -G docker,libvirtd $username
+  sudo usermod -a -G docker,libvirtd,libvirt,libvirt-qemu $username
 done
 
 echo "Done!"
