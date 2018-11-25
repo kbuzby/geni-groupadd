@@ -14,5 +14,8 @@ do
   sudo usermod -a -G docker,libvirtd,libvirt,libvirt-qemu $username
 done
 
+echo "Generating ssh key"
+ssh-keygen -t rsa
+
 echo "Done!"
 
