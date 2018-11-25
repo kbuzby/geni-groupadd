@@ -17,5 +17,9 @@ done
 echo "Generating ssh key"
 ssh-keygen -t rsa
 
+echo "Checking out setup scripts"
+mkdir -p ~/contrib
+git clone https://github.com/kbuzby/kvm-install-vm.git ~/contrib/kvm-install-vm
+
 echo "Done!"
 
